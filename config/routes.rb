@@ -9,5 +9,6 @@ Rails.application.routes.draw do
   # get '/books/:id/edit' => 'books#edit'
   # post '/books' => 'books#create'
   # get '/books/new' => 'books#new'
-  get "/top/" => "books#top"
+  
+  root :to => 'books#top'
 end
